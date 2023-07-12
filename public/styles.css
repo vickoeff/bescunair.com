@@ -1,0 +1,66 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+@font-face {
+  font-family: "main-font";
+  src: url("./");
+}
+
+@font-face {
+  font-family: "body-font";
+  src: url("./");
+}
+
+/*Global*/
+body {
+  overflow: hidden;
+}
+
+/*Overlay*/
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  background-color: #ebfffe;
+}
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20vw;
+  height: 80vh;
+  margin: auto;
+  background-image: url("./images/overlay-left.png");
+  background-size: 100% 100%;
+}
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 20vw;
+  height: 80vh;
+  margin: auto;
+  background-image: url("./images/overlay-right.png");
+  background-size: 100% 100%;
+}
+.overlay-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10vh;
+  max-width: 20vw;
+  margin: auto;
+}
+.overlay-logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50vh;
+  max-width: 15vw;
+  margin: auto;
+}
