@@ -19,6 +19,10 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
@@ -26,17 +30,231 @@
     <link rel="stylesheet" href="./public/styles.css" />
   </head>
   <body>
-    <div class="overlay">
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay">
       <img
-        class="overlay-text animate__animated animate__bounce"
+        class="overlay-text animate__animated animate__fadeInDown"
         src="./public/images/overlay-text.png"
         alt="overlay text"
       />
       <img
-        class="overlay-logo animate__animated animate__bounce"
+        class="overlay-logo animate__animated animate__fadeInUp"
         src="./public/images/logo.png"
         alt="overlay text"
       />
+      <button class="btn" id="slideUp">
+        <i
+          class="bi bi-chevron-double-up animate__animated animate__shakeY animate__infinite infinite animate__slow animate__delay-2s"
+        ></i>
+        Slide Up
+      </button>
+    </div>
+
+    <div id="main">
+      <section id="header">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-6">
+              <img
+                class="img-fluid"
+                src="./public/images/logo.png"
+                alt="logo besc"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <div class="note">
+                <div class="row">
+                  <div class="col-4">
+                    <img
+                      class="img-fluid"
+                      src="./public/images/maskot.png"
+                      alt="maskot"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <p>
+                      BESC kepanjangan dari Biology Environmental Smart
+                      Competition, merupakan Olimpiade Biologi tingkat Nasional
+                      yang diselenggarakan oleh Prodi Biologi Universitas
+                      Airlangga dan dapat diikuti oleh seluruh siswa di
+                      Indonesia. Berikut adalah daftar lomba yang dapat diikuti
+                      :
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6">
+              <div class="text-center">
+                <h1>Jenis Lomba</h1>
+                <h2>Olimpiade</h2>
+                <div class="row mb-3">
+                  <div class="col-6">
+                    <a href="./smp.html" class="btn btn-smp"
+                      >SMP/MTs/sederajat</a
+                    >
+                  </div>
+                  <div class="col-6">
+                    <a href="./sma.html" class="btn btn-sma">SMA/sederajat</a>
+                  </div>
+                </div>
+                <h2>LKTI</h2>
+                <div class="row justify-content-center mb-5">
+                  <div class="col-6">
+                    <a href="./sma.html" class="btn btn-sma-lkti"
+                      >SMA/sederajat</a
+                    >
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-6">
+                    <a href="https://pendaftaran.bescunair.com" target="_blank">
+                      <img
+                        class="img-fluid"
+                        src="./public/images/register-btn.png"
+                        alt="button register"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-4 col-sm-1 d-flex align-items-center justify-content-center"
+            >
+              <h1>TIMELINE</h1>
+            </div>
+            <div class="col">
+              <div class="tiemeline">
+                <ul>
+                  <li>
+                    <p>Pendaftaran</p>
+                    <p>24 Juli 2023</p>
+                  </li>
+                  <li>
+                    <p>Penyisihan</p>
+                    <p>28 Oktober 2023</p>
+                  </li>
+                  <li>
+                    <p>Semifinal</p>
+                    <p>4 November 2023</p>
+                  </li>
+                  <li>
+                    <p>Final</p>
+                    <p>11 November 2023</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section id="region">
+        <div class="container">
+          <div class="text-center">
+            <h1>REGION</h1>
+            <h2>BOLEH DIIKUTI SIAPA SAJA ?</h2>
+          </div>
+          <img class="img-fluid" src="./public/images/map.png" alt="Map" />
+          <div class="text-center">
+            <p>SMA dan SMP/sederajat seluruh Indonesia</p>
+            <h1>PARTNERSHIP</h1>
+          </div>
+        </div>
+      </section>
+
+      <footer id="contact">
+        <div class="container">
+          <div class="text-center">
+            <h1>OUR CONTACT</h1>
+          </div>
+          <div class="row sosmed mt-5">
+            <div class="col-6 col-sm-6">
+              <a href="https://wa.me/0811632404" target="_blank">
+                <img src="./public/images/whastapp.png" alt="whatsapp icon" />
+                SMP: Fahmi (0811632404)
+              </a>
+            </div>
+            <div class="col-6 col-sm-6">
+              <a href="https://wa.me/087751638017" target="_blank">
+                <img src="./public/images/whastapp.png" alt="whatsapp icon" />
+                SMA: Fahrul (087751638017)
+              </a>
+            </div>
+            <div class="col-6 col-sm-6">
+              <a href="https://wa.me/082320213273" target="_blank">
+                <img src="./public/images/whastapp.png" alt="whatsapp icon" />
+                LKTI: Amar (082320213273)
+              </a>
+            </div>
+            <div class="col-6 col-sm-6">
+              <a href="https://wa.me/081234839279" target="_blank">
+                <img src="./public/images/whastapp.png" alt="whatsapp icon" />
+                LKTI: Hilmi (081234839279)
+              </a>
+            </div>
+          </div>
+          <div class="text-center media mt-4">
+            <h1>SEE US IN</h1>
+          </div>
+          <div class="row justify-content-center media mt-4">
+            <div class="col-4 col-sm-2">
+              <a href="https://wa.me/0811632404" target="_blank">
+                <div class="image">
+                  <img
+                    src="./public/images/instagram.png"
+                    alt="whatsapp icon"
+                  />
+                </div>
+                @besc_unair
+              </a>
+            </div>
+            <div class="col-4 col-sm-2">
+              <a href="https://wa.me/087751638017" target="_blank">
+                <div class="image">
+                  <img src="./public/images/youtube.png" alt="whatsapp icon" />
+                </div>
+                BESC Himbio<br />Unair
+              </a>
+            </div>
+            <div class="col-4 col-sm-2">
+              <a href="https://wa.me/082320213273" target="_blank">
+                <div class="image">
+                  <img src="./public/images/tiktok.png" alt="whatsapp icon" />
+                </div>
+                @bescunair
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <!-- Vendors JavaScript -->
