@@ -57,6 +57,19 @@ section {
   border-bottom: 3px solid #231916;
 }
 
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  width: 6px;
+  background: #267236;
+}
+*::-webkit-scrollbar-thumb {
+  background: #39af52;
+  border-radius: 50px;
+}
+
 /*Preloader*/
 #preloader {
   position: fixed;
@@ -344,6 +357,82 @@ section {
   margin: auto;
 }
 
+/*Prize*/
+.prize-item {
+  font-weight: 600;
+}
+
+.prize-item img {
+  max-width: 150px;
+}
+
+/*Common Style Sub Page*/
+#head h1 {
+  font-size: 64pt;
+}
+#sma footer,
+#smp footer {
+  padding-top: 100vh;
+}
+#requirements h1 {
+  font-size: 32pt;
+}
+#requirements ol > li {
+  font-size: 16pt;
+  font-weight: bold;
+  font-family: "arial", sans-serif;
+  text-align: justify;
+}
+
+.btn-download {
+  position: relative;
+  padding: 0;
+  padding-left: 4rem;
+  font-size: 24pt;
+  background-color: #fcf4d7;
+  border-radius: 40px;
+  border: 4px solid #7f664f;
+  box-shadow: 4px 4px 0 #7f664f;
+  transition: 0.5s;
+}
+.btn-download:hover {
+  color: white;
+  background-color: #7f664f;
+  transform: translateX(4px);
+  transform: translateY(4px);
+  box-shadow: unset;
+}
+.btn-download .right-icon {
+  display: inline-block;
+  padding: 4px 16px;
+  margin-left: 2rem;
+  background-color: #ccd5ae;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.btn-download .right-icon img {
+  position: relative;
+  width: 24px;
+  bottom: 4px;
+}
+
+.cp {
+  width: fit-content;
+  font-size: 2em;
+  font-weight: 600;
+  font-family: "head-font";
+  color: black;
+  text-decoration: none;
+  padding: 4px 4rem;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+}
+
+.cp:hover {
+  color: white;
+}
+
 /* SMA */
 .sma {
   margin: 40px auto;
@@ -370,4 +459,15 @@ section {
   font-weight: bold;
   font-size: 18px;
   text-align: justify;
+}
+
+/*SMP*/
+#smp {
+  background-image: url("./images/smp-bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+#head h1 {
+  color: #4e7d2d;
 }
