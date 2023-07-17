@@ -208,6 +208,15 @@ section {
   text-align: justify;
 }
 
+.ornamen {
+  max-width: 30%;
+  background-image: url("./images/ornamen\ hadiah\ lkti.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 2rem 2rem;
+  align-self: center;
+}
+
 .btn-smp {
   font-weight: 600;
   background-color: #24ef03;
@@ -312,6 +321,11 @@ section {
   padding-bottom: 4rem;
 }
 
+#contacts {
+  margin-top: 16rem;
+  padding-bottom: 20rem;
+}
+
 #contact .sosmed a {
   display: flex;
   font-size: 16pt;
@@ -358,6 +372,10 @@ section {
 }
 
 /*Prize*/
+.prize {
+  font-family: "arial", "sans-serif";
+}
+
 .prize-item {
   font-weight: 600;
 }
@@ -365,6 +383,29 @@ section {
 .prize-item img {
   max-width: 150px;
 }
+
+.prize-title h2 {
+  letter-spacing: 10px;
+  font-weight: bolder;
+}
+
+/*Batch*/
+.batch {
+ padding: 10px 25px 10px;
+}
+
+.batch-title {
+  font-family: "arial", "sans-serif";
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.batch-body {
+  font-family: "arial", "sans-serif";
+  font-size: 22px;
+  margin: 0;
+}
+
 
 /*Common Style Sub Page*/
 #head h1 {
@@ -429,6 +470,17 @@ section {
   background-color: var(--primary-color);
 }
 
+.cp-sma {
+  width: fit-content;
+  font-size: 2em;
+  font-family: "arial", "sans-serif";
+  color: black;
+  text-decoration: none;
+  padding: 4px 2rem;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+}
+
 .cp:hover {
   color: white;
 }
@@ -443,6 +495,9 @@ section {
 #head .title {
   color: #5d66b6;
 }
+.body-color {
+  color: white;
+}
 
 /*SMP*/
 #smp {
@@ -453,4 +508,15 @@ section {
 }
 #head h1 {
   color: #4e7d2d;
+}
+
+/*LKTI*/
+#lkti {
+  background-image: url("./images/lkti-bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+#head h1 {
+  color: red;
 }
