@@ -12,6 +12,11 @@
 }
 
 @font-face {
+  font-family: "custom-head-font";
+  src: url("./fonts/Flamante-Round-Bold-FFP.woff");
+}
+
+@font-face {
   font-family: "body-font";
   src: url("./fonts/Aleo-Regular.woff");
 }
@@ -398,6 +403,7 @@ section {
 .prize-title h2 {
   letter-spacing: 10px;
   font-weight: bolder;
+  font-size: 32pt;
 }
 
 /*Batch*/
@@ -418,8 +424,11 @@ section {
 }
 
 /*Common Style Sub Page*/
-#head h1 {
+#sma #head h1,
+#smp #head h1,
+#lkti #head h1 {
   font-size: 64pt;
+  font-family: "custom-head-font", sans-serif;
 }
 #sma footer,
 #smp footer {
@@ -427,6 +436,8 @@ section {
 }
 #requirements h1 {
   font-size: 32pt;
+  font-family: "custom-head-font", sans-serif;
+  letter-spacing: 8px;
 }
 #requirements ol > li {
   font-size: 16pt;
@@ -508,6 +519,10 @@ section {
 }
 #smp #head h1 {
   color: #4e7d2d;
+}
+
+#smp .prize-title h2 {
+  color: #231916;
 }
 
 /*LKTI*/
