@@ -364,6 +364,14 @@ section {
   margin-right: 1rem;
 }
 
+#copyright {
+  background-color: #f7f8f9;
+  color: #fa8336;
+  font-size: 15px;
+  text-align: center;
+  padding: 12px 0;
+}
+
 .media h1 {
   font-size: 32pt;
 }
