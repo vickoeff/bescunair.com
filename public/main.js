@@ -12,4 +12,5 @@ btnOpenOverlay.addEventListener("click", () => {
     overlay.style.transform = "translateY(-100vh)";
     main.style.maxHeight = "unset";
     main.style.overflowY = "auto";
+    setTimeout(() => overlay.style.display = "none", 500);
 })

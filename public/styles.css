@@ -206,11 +206,12 @@ section {
 /* Main Page */
 #main {
   max-height: 100vh;
-  background-image: url("./images/main-bg.png");
+  background-image: url("./images/main-bg.jpg");
   background-position: top center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow-y: hidden;
+  scroll-behavior: smooth;
 }
 
 #about h1 {
@@ -506,7 +507,7 @@ section {
 
 /* SMA */
 #sma {
-  background-image: url("./images/sma-bg.png");
+  background-image: url("./images/sma-bg.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: top;
@@ -520,7 +521,7 @@ section {
 
 /*SMP*/
 #smp {
-  background-image: url("./images/smp-bg.png");
+  background-image: url("./images/smp-bg.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: top;
@@ -535,7 +536,7 @@ section {
 
 /*LKTI*/
 #lkti {
-  background-image: url("./images/lkti-bg.png");
+  background-image: url("./images/lkti-bg.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: top;
